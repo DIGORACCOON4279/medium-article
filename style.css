@@ -1,0 +1,64 @@
+:root{
+  --white: rgb(255, 255, 255);
+  --gray: rgb(117, 98, 98);
+  --purple: rgb(189, 125, 189);
+  --lightgray: rgb(211, 211, 211);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing:border-box;
+}
+body{
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner{
+  background-image: url(https://source.unsplash.com/random/1000x500);
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.banner .container{
+  text-align: center;
+  color: var(--white);
+  font-size: 25px;
+}
+.banner .container p{
+  font-size: 28px;
+  opacity: .7;
+}
+.container{
+  width: 70%;
+  max-width: 1100px;
+  height: auto;
+  margin: auto;
+  color: var(--gray);
+  padding-bottom: 30px;
+}
+.container h2{
+  padding: 35px 0px;
+}
+.container p{
+  font-size: 18px;
+  font-weight: 200;
+  margin: 10px 0px;
+}
+.container .link-medium{
+  font-size: 25px;
+  text-decoration: none;
+  color: var(--purple);
+  background-color: var(--lightgray);
+  transition: .5s;
+}
+.container .link-medium:hover{
+  background-color: var(--purple);
+  color: var(--lightgray);
+}
+/* Media queries */
+@media(max-width: 992px) {
+  .container {
+    width: 700px;
+  }
+}
